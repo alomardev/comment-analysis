@@ -28,6 +28,10 @@
 	}
 }
 
+.modal .modal-header {
+	cursor: default;
+}
+
 /* others */
 
 * {
@@ -39,7 +43,24 @@ body {
 	background-color: $body-bg-color;
 }
 
-.card {
-	// box-shadow: $box-shadow-mid;
-	// border: 1px solid $gray-500;
+h1 {
+	@extend .mb-3;
+}
+
+hr {
+	border-color: mix($gray-400, $gray-500);
+}
+
+.fab {
+	cursor: pointer;
+	display: block;
+	border-radius: 50%;
+	background-color: theme-color("primary");
+	padding: 10px;
+	box-shadow: $box-shadow-mid;
+	@extend .btn;
+	border: none;
+	@include hover-focus {
+		background-color: theme-color("dark");
+	}
 }

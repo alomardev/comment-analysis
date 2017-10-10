@@ -45,5 +45,5 @@ $primary-color: #029278;
 $login-card-width: 350px;
 $box-shadow-low: 0 2px 6px $gray-500;
 $box-shadow-mid: 0 3px 10px $gray-500;
-$box-shadow-high: 0 5px 13px $gray-500;
+$box-shadow-high: 0 5px 13px rgba($gray-500, 0.4);
 $body-bg-color: mix($gray-100, $gray-200);

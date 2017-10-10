@@ -1,0 +1,35 @@
+.course-list-wrapper {
+	margin-left: map-get($spacers, 2) * -1;
+	margin-right: map-get($spacers, 2) * -1;
+	> a {
+		color: inherit;
+		text-decoration: none;
+		@extend .p-2;
+		@extend .float-left;
+		width: 50%;
+		.card {
+			cursor: pointer;
+			@extend .p-3;
+			position: relative;
+			> span {
+				position: absolute;
+				right: 0;
+				@extend .mr-3;
+				> [class*="icon-"] {
+					display: inline-block;
+					margin-bottom: -8px;
+				}
+			}
+			@include hover-focus {
+				background-color: mix($white, $gray-100);
+				box-shadow: $box-shadow-high;
+				border-color: $gray-500;
+			}
+			transition: color 100ms, background-color 80ms, box-shadow 200ms, border-color 80ms;
+		}
+
+		@media (max-width: map-get($grid-breakpoints, "lg")) {
+			width: 100%;
+		}
+	}
+}

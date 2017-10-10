@@ -8,7 +8,10 @@
 		}
 	}
 }
-
+.total-info .icon-comment {
+	margin-bottom: -9px;
+	@extend .mr-1;
+}
 .comment {
 	position: relative;
 	@extend .card;

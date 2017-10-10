@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top justify-content-between">
 	<div class="container">
-		<a class="navbar-brand mr-4" href="#">
+		<a class="navbar-brand mr-4" href="/">
 	    <img src="/res/brand.svg" width="185" height="35" alt="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
 					<a class="nav-link" href="/analysis.php">Analysis</a>
 				</li>
 			</ul>
-			<a href="#" class='btn btn-dark mt-sm-0 mt-3 mb-sm-0 mb-2 d-block d-sm-inline-block'>Login</a>
+			<a href="/login.php" class='btn btn-dark mt-sm-0 mt-3 mb-sm-0 mb-2 d-block d-sm-inline-block'>Login</a>
 		</div>
 	</div>
 </nav>

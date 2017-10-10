@@ -1,6 +1,6 @@
 @@include("./_top.php", {"title":"Comments"})
 
-<h1>Course Name</h1>
+<h1 class='clearfix'>Course Name<span class='float-right'>#CE123</span></h1>
 <form action="" method="POST" class="card" id="comment-form">
 	<div class="card-header">Enter your feedback</div>
 	<div class="card-body">
@@ -14,7 +14,7 @@
 <hr>
 <div class='clearfix mb-3'>
 	<small class='float-right'><span class="text-success">123+</span> <span class="text-danger">334-</span></small>
-	<small class='float-left'>1234</small>
+	<small class='float-left total-info'><span class="icon-comment d-inline-block"></span>1234</small>
 </div>
 <!-- auto generate by php -->
 

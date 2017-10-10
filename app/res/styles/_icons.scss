@@ -1,0 +1,21 @@
+$icon-light-color: rgba($black, 0.5);
+$icon-dark-color: rgba($white, 0.75);
+$icon-data-comment: str-replace(url("data:image/svg+xml;charset=utf8,<svg fill='#{$icon-light-color}' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), "#", "%23");
+$icon-data-add: str-replace(url("data:image/svg+xml;charset=utf8,<svg fill='#{$white}' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), "#", "%23");
+
+@mixin icon-template($icon, $width: 24px, $height: 24px) {
+	display: block;
+	width: $width;
+	height: $height;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: $icon;
+}
+
+.icon-comment {
+	@include icon-template($icon-data-comment);
+}
+
+.icon-add {
+	@include icon-template($icon-data-add);
+}
