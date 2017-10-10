@@ -1,0 +1,45 @@
+/* bootstrap override */
+.navbar {
+	background-image: linear-gradient(to right, theme-color("dark"), theme-color("primary"));
+	box-shadow: $box-shadow-mid;
+
+	.navbar-toggler {
+		border-width: 2px;
+	}
+	.navbar-toggler:focus {
+		border-color: $navbar-dark-color;
+	}
+	.btn-dark {
+		background-color: rgba($black, .24);
+		border: none;
+		box-shadow: none;
+		@include hover-focus {
+			background-color: rgba($black, 0.35);
+		}
+	}
+	hr {
+		border-color: transparentize($navbar-dark-color, 0.3);
+	}
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+	.container {
+		max-width: map-get($container-max-widths, "lg");
+	}
+}
+
+/* others */
+
+* {
+	outline: none !important;
+}
+
+body {
+	padding-top: $fixed-navbar-padding;
+	background-color: $body-bg-color;
+}
+
+.card {
+	// box-shadow: $box-shadow-mid;
+	// border: 1px solid $gray-500;
+}

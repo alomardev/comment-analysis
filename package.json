@@ -1,11 +1,11 @@
 {
-  "name": "gulp-starter-project",
+  "name": "comment-analysis",
   "version": "0.0.1",
-  "description": "Gulp Starter Project",
+  "description": "Comment Analysis",
   "author": "Abdulrahman Al'omar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alomardev/gulp-starter-project"
+    "url": "https://github.com/alomardev/comment-analysis"
   },
   "devDependencies": {
     "child_process": "^1.0.2",
@@ -22,5 +22,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

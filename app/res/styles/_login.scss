@@ -1,0 +1,9 @@
+#login-card {
+	max-width: $login-card-width;
+	margin: 0 auto;
+	@extend .mt-2;
+	@extend .mt-sm-5;
+	button {
+		width: 100%;
+	}
+}

@@ -48,7 +48,7 @@ gulp.task('scripts', ['clean:scripts'], function() {
 });
 
 /* Styles */
-gulp.task('styles', ['clean:styles'], function() {
+gulp.task('styles',  ['copy:css'], function() {
 	return gulp.src(config.dir.app + '/res/styles/main.{scss,sass}')
 	.pipe(plumber())
 	.pipe(sass())
@@ -84,10 +84,6 @@ gulp.task('copy:css', ['clean:css'], function() {
 /* Clean */
 gulp.task('clean:scripts', function() {
 	del.sync(config.dir.dev + '/res/*.js');
-});
-
-gulp.task('clean:styles', function() {
-	del.sync(config.dir.dev + '/res/*.css');
 });
 
 gulp.task('clean:markup', ['clean:empty'], function() {
@@ -144,10 +140,9 @@ gulp.task('build:prod', ['build'], function() {
 /* Watch */
 gulp.task('watch', ['build'], function() {
 	gulp.watch(config.dir.app + '/res/scripts/*.js', ['scripts']);
-	gulp.watch(config.dir.app + '/res/styles/*.{scss,sass}', ['styles']);
+	gulp.watch(config.dir.app + '/res/styles/**/*.{scss,sass,css}', ['styles']);
 	gulp.watch(config.dir.app + '/**/*.{html,php}', ['markup']);
 	gulp.watch(config.dir.app + '/res/images/*.{png,gif,jpg,jpeg,svg,ico}', ['copy:images']);
-	
 	gulp.watch(config.dir.app + '/raw/**/*', ['copy:raw']);
 	gulp.watch(config.dir.app + '/plugins/**/*', ['copy:plugins']);
 });

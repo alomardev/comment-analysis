@@ -1,0 +1,28 @@
+#comment-form {
+	.card-body {
+		padding: 0;
+		textarea {
+			border: none;
+			box-shadow: none;
+			padding: 1.25rem;
+		}
+	}
+}
+
+.comment {
+	position: relative;
+	@extend .card;
+	@extend .mb-3;
+	> div {
+		@extend .card-body;
+		@extend .mb-2;
+	}
+	small {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: block;
+		@extend .mb-2;
+		@extend .mr-3;
+	}
+}

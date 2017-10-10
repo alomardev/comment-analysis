@@ -1,0 +1,49 @@
+$primary-color: #029278;
+
+/* bootstrap override */
+$navbar-dark-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='#{$navbar-dark-color}' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E"), "#", "%23");
+$navbar-dark-toggler-border-color:  transparent;
+$card-border-color: rgba($black,.2);
+$input-focus-border-color: $primary-color;
+
+$gray-100: #F8FAFA;
+$gray-200: #E9EFEF;
+$gray-300: #DEE5E6;
+$gray-400: #CED9DA;
+$gray-500: #ADBBBD;
+$gray-600: #869496;
+$gray-700: #495557;
+$gray-800: #343E40;
+$gray-900: #212829;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+);
+
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: darken($primary-color, 11%)
+);
+
+/* others */
+$fixed-navbar-padding: 80px;
+$primary-color: #029278;
+$login-card-width: 350px;
+$box-shadow-low: 0 2px 6px $gray-500;
+$box-shadow-mid: 0 3px 10px $gray-500;
+$box-shadow-high: 0 5px 13px $gray-500;
+$body-bg-color: mix($gray-100, $gray-200);
