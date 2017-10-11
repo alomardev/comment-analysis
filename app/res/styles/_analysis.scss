@@ -1,0 +1,51 @@
+.chart-wrapper {
+	$svg-positive-color: desaturate(lighten(theme-color("success"), 10%), 10%);
+	$svg-negative-color: desaturate(lighten(theme-color("danger"), 10%), 10%);
+	$svg-natural-color: $gray-500;
+	$height: 100px;
+	svg {
+		//background-color: $gray-200;
+		width: 100%;
+		height: $height;
+		.chart-line {
+			stroke: $gray-700;
+			stroke-width: 4px;
+		}
+		
+		[class*="chart-block"] {
+			stroke: $white;
+			stroke-width: 2px;
+		}
+
+		[class*="chart-text-"] {
+			font-size: $height * 0.15;
+			font-family: $font-family-sans-serif;
+			alignment-baseline: central;
+		}
+
+		.chart-block-positive {
+			fill: $svg-positive-color;
+		}
+		.chart-block-negative {
+			fill: $svg-negative-color;
+		}
+		.chart-block-natural {
+			fill: $svg-natural-color;
+		}
+
+		.chart-text-positive {
+			fill: darken($svg-positive-color, 15%);
+		}
+		.chart-text-negative {
+			fill: darken($svg-negative-color, 15%);
+		}
+		.chart-text-natural {
+			fill: darken($svg-natural-color, 20%);
+		}
+
+		.chart-text-inner {
+			fill: $white;
+			text-anchor: end;
+		}
+	}
+}

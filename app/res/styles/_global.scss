@@ -28,8 +28,13 @@
 	}
 }
 
-.modal .modal-header {
-	cursor: default;
+.modal {
+	.modal-content {
+		box-shadow: 0 10px 70px rgba($black, 0.4);
+	}
+	.modal-header {
+		cursor: default;
+	}
 }
 
 /* others */
@@ -51,6 +56,12 @@ hr {
 	border-color: mix($gray-400, $gray-500);
 }
 
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .fab {
 	cursor: pointer;
 	display: block;
@@ -64,3 +75,4 @@ hr {
 		background-color: theme-color("dark");
 	}
 }
+

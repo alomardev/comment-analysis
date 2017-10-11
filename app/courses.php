@@ -2,7 +2,7 @@
 
 <h1 class='mb-2 clearfix'>Courses<div class="fab float-right mr-2" data-toggle="modal" data-target="#new-course-modal"><span class='icon-add'></span></div></h1>
 
-<div class="course-list-wrapper">
+<div class="two-cols-wrapper-lg course-list">
 	<a href="#"><div class="card">Database Design and Analsyis OOP 1235<span class="count"><span class="icon-comment"></span> 123</span></div></a>
 	<a href="#"><div class="card">Database Design and Analsyis OOP 1235<span class="count"><span class="icon-comment"></span> 123</span></div></a>
 	<a href="#"><div class="card">Database Design and Analsyis OOP 1235<span class="count"><span class="icon-comment"></span> 123</span></div></a>

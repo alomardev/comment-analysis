@@ -39,6 +39,12 @@ $theme-colors: (
   dark: darken($primary-color, 11%)
 );
 
+$navbar-toggler-padding-y: .25rem;
+$navbar-toggler-padding-x: .25rem;
+$navbar-toggler-border-radius: 50%;
+
+$grid-gutter-width: map-get($spacers, 3);
+
 /* others */
 $fixed-navbar-padding: 80px;
 $primary-color: #029278;
