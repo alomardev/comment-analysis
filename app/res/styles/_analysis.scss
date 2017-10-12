@@ -2,7 +2,7 @@
 	$svg-positive-color: desaturate(lighten(theme-color("success"), 10%), 10%);
 	$svg-negative-color: desaturate(lighten(theme-color("danger"), 10%), 10%);
 	$svg-natural-color: $gray-500;
-	$height: 100px;
+	$height: 110px;
 	svg {
 		//background-color: $gray-200;
 		width: 100%;
@@ -11,10 +11,15 @@
 			stroke: $gray-700;
 			stroke-width: 4px;
 		}
-		
-		[class*="chart-block"] {
+
+		.chart-sep-line {
 			stroke: $white;
 			stroke-width: 2px;
+		}
+		
+		[class*="chart-block"] {
+			// stroke: $white;
+			// stroke-width: 2px;
 		}
 
 		[class*="chart-text-"] {
