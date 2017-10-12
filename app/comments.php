@@ -7,6 +7,7 @@
 		<textarea class='form-control' name="feedback" rows="5"></textarea>
 	</div>
 	<div class="card-footer clearfix">
+		<div class="float-left btn pl-0 text-secondary"><small>0/200</small></div>
 		<button class="float-right btn btn-primary">Post</button>
 		<button class="float-right btn btn-secondary mr-2">Clear</button>
 	</div>
