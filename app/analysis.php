@@ -1,6 +1,6 @@
 @@include("./_top.php", {"title":"Analysis"})
 
-<h1>Analysis</h1>
+<div class='page-title'>Analysis</div>
 
 <div class="row">
 	<div class='chart-wrapper col-md-6 pb-3'>

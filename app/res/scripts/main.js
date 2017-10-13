@@ -1,0 +1,7 @@
+function setupCommentsPage() {
+	
+}
+
+$(function() {
+	setupCommentsPage();
+});
