@@ -65,6 +65,9 @@ hr {
 	white-space: nowrap;
 }
 
+.pos-rel {
+	position: relative;
+}
 .fab {
 	cursor: pointer;
 	display: block;
@@ -76,13 +79,23 @@ hr {
 	@include hover-focus {
 		background-color: theme-color("dark");
 	}
-	padding: 10px;
-	@include media-breakpoint-down("md") {
-		padding: 5px; //
+
+	width: 44px !important;
+	height: 44px !important;
+
+	&.align-right {
+		position: absolute;
+		right: 0;
+		top: calc(50% - 22px);
 	}
-	@include media-breakpoint-down("sm") {
-		margin-top: -5px;
-		padding: 5px; //
+	@include media-breakpoint-down("md") {
+		width: 34px !important;
+		height: 34px !important;
+		&.align-right {
+			position: absolute;
+			right: 0;
+			top: calc(50% - 17px);
+		}
 	}
 }
 
