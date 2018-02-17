@@ -41,6 +41,10 @@
 	}
 }
 
+.btn {
+	@extend .text-uppercase;
+}
+
 /* others */
 
 * {
@@ -74,7 +78,6 @@ hr {
 	border-radius: 50%;
 	background-color: theme-color("primary");
 	box-shadow: $box-shadow-mid;
-	@extend .btn;
 	border: none;
 	@include hover-focus {
 		background-color: theme-color("dark");
